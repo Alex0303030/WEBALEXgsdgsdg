@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  text-align: center;
+  background-color:lightblue
+
+}
+button {
+  background-color:green;
+  font-family: verdana;
+  height: 40;
+  width: 150;
+  font-size: 20;
+  border-radius:6;
+}
+</style>
+<body>
+
+<h1><font size="4" face="courier new">Family Tree Corona Contest!<h1>
+<h2><font size="4" face="Courier New">Add your vote here!<h2>
+
+<div style="text-align:center">
+  <button onclick="playPause()">Play/Pause</button>
+  <br><br>
+  <video id="video1" width="300">
+    <source src="IMG_2961.MOV" type="video/mp4">
+  </video>
+</div>
+
+<script>
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+</script>
+
+<h4></h4>
+<iframe src="http://www.strawpoll.me/embed_1/19555986" style="width:680px;height:370px;border:0;">Loading poll...</iframe>
+
+</body>
+</html>
